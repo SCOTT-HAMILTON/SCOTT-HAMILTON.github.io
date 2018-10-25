@@ -1,1 +1,0 @@
-# SCOTT-HAMILTON.github.io
