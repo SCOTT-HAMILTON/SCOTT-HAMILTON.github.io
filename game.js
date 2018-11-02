@@ -172,6 +172,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 4427, "filename": "/main.lua"}, {"audio": 0, "start": 4427, "crunched": 0, "end": 15334, "filename": "/mathplus.lua"}], "remote_package_size": 15334, "package_uuid": "72dae305-95e5-4561-b65d-b114c2c12933"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 68423, "filename": "/ciel.jpg"}, {"audio": 0, "start": 68423, "crunched": 0, "end": 87951, "filename": "/wall2.jpg"}, {"audio": 0, "start": 87951, "crunched": 0, "end": 92809, "filename": "/textured_polygon.lua"}, {"audio": 0, "start": 92809, "crunched": 0, "end": 118362, "filename": "/wall1.jpg"}, {"audio": 0, "start": 118362, "crunched": 0, "end": 123995, "filename": "/main.lua"}, {"audio": 0, "start": 123995, "crunched": 0, "end": 134376, "filename": "/mathplus.lua"}], "remote_package_size": 134376, "package_uuid": "c0a137d2-efc8-410d-bbea-5a0d74d0119b"});
 
 })();
