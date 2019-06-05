@@ -5,10 +5,10 @@
 
 
 # Qui est-ce?
-[//]: <> ( diaop 1 )
+
 
 # Les origines
-[//]: <> ( diaop 2 )
+
 ### D'ou vient-il?
 
 
