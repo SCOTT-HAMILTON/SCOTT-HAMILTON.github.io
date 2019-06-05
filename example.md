@@ -40,7 +40,7 @@
 ## Entree a la Sorbonne
 
 Etudiera : 
- - les sciences de l'antiquité
+ - les sciences de l'antiquite
  - les langues orientales
 
 
@@ -109,6 +109,6 @@ Tout ces sites furent decouvert en une douzaine d'annees.
 
 # Fin
 
-Il mourut en 1890 e l'age de 68 ans.
+Il mourut en 1890 a l'age de 68 ans.
 
 Il est enterre au premier cimetiere d'Athene
