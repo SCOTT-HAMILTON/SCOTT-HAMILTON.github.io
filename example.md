@@ -1,28 +1,33 @@
-# My presentation
+# L'histoire de Schliemann
 
-## Powered with reveal.js
-
-
-
-# This is about squares
-
- - Squares are nice
- - They feel good
- - I love squares
+###### *Produit avec reveal.js*
 
 
 
-# Blablabla title
+# Qui est-ce?
+[//]: <> ( diaop 1 )
 
-### Some content
-
-
-# Another title
-
-#### lol mdr
+# Les origines
+[//]: <> ( diaop 2 )
+### D'où vient-il?
 
 
 
-# And the last but not least
+# La fortune
+[//]: <> ( diaop 3 )
 
-###### lol mdr mdr
+
+## Saint-Petersbourg (1846)
+[//]: <> ( diaop 4 )
+![image de St-Petersbourg](img/saint-petersbourg.jpg)
+
+
+## Californie (1850)
+[//]: <> ( diaop 5 )
+![image de la californie en 1860](img/californie_1860.jpeg)
+
+
+## Retour en Russie (1855)
+[//]: <> ( diaop 6 )
+![image de la californie en 1860](img/guerre_de_crimee_1850.jpg)
+
