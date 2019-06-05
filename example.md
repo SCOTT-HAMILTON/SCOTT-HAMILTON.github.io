@@ -33,10 +33,10 @@
 
 
 
-# Installation à Paris (1861)
+# Installation a Paris (1861)
 
 
-## Entrée à la Sorbonne
+## Entree a la Sorbonne
 
 Etudiera : 
  - les sciences de l'antiquité
@@ -82,11 +82,11 @@ Etudiera :
 
 # Fouilles 
 
-Début en 1870 en grèce et en asie mineure.
+Debut en 1870 en grece et en asie mineure.
 
 
 ## Troie
-Il réalisa son rêve d'enfance et découvrit Troie sur une butte d'Hissarlik en Turquie.
+Il realisa son reve d'enfance et decouvrit Troie sur une butte d'Hissarlik en Turquie.
 ![image du site d'Hissarlik pendant les fouilles](img/fouille_de_troie.jpg)
 
 
@@ -108,6 +108,6 @@ Tout ces sites furent decouvert en une douzaine d'annees.
 
 # Fin
 
-Il mourut en 1890 à l'age de 68 ans.
+Il mourut en 1890 e l'age de 68 ans.
 
 Il est enterre au premier cimetiere d'Athene
