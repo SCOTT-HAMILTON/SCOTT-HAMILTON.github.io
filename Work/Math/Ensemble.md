@@ -1,5 +1,5 @@
 ---
-title: "Cours de math"
+title: "Cours de maths"
 author: [Scott Hamilton]
 date: "08-09-2019"
 subject: "Ensembles"
@@ -114,7 +114,9 @@ $\mathbb{R}$ est l'ensemble des rationnels et des irrationnels.
 \hfill \break
 \hfill \break
 
-__**Diviseur**__ : $a\in\mathbb N$, $b\in\mathbb N$ 
+**Diviseur** : 
+
+$a\in\mathbb N$, $b\in\mathbb N$
 
 \begin{Large}
 \quad \quad $a$ est un diviseur de $b$,
