@@ -1,6 +1,6 @@
-
 BEGIN{
 isin=0
+line=0
 }
 {
 isin=0

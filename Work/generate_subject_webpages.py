@@ -39,7 +39,7 @@ def generate_content(matiere, pdfs, file_path, configs=None):
             desc = config_pdf["description"]
 
         buff = template_link_content
-        buff = re.sub('<url>', pdf.split('/')[2], buff)
+        buff = re.sub('<url>', pdf.split('/')[-1], buff)
         buff = re.sub('<name>', name, buff)
         buff = re.sub('<description>', desc, buff)
         files_link_content += buff +'\n' 
@@ -61,15 +61,14 @@ def load_config(yaml_configfile):
 def list_pdfs(path):
     files = []
     for file in os.listdir(path):
-            if file.endswith(".pdf"):
-                        files.append(os.path.join(path, file))
+        if file.endswith(".pdf"):
+            files.append(os.path.join(path, file))
 
     return files
 
 threads = []
 
 for line in sys.stdin:
-    print (line)
     mat = line.strip()
     print("args : ", mat)
     file_path = "./"+mat+"/index.html"
