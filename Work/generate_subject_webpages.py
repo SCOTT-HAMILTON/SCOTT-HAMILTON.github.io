@@ -14,7 +14,11 @@ def gen_files_list(files, prefix=""):
 \t<p>(<description>)</p>"""
     for file in files:
         print(" file : ", file)
-        config_file = file[:-4]+'.yaml'
+        darkmode_pdf = False
+        if file[len(file)-9:] == "-dark.pdf":
+        	config_file = file[:-9]+'.yaml'
+        	darkmode_pdf = True
+        else: config_file = file[:-4]+'.yaml'
         print("config file yaml : ",config_file)
         config = load_config(config_file)
         name = "Unknown file"
@@ -23,7 +27,9 @@ def gen_files_list(files, prefix=""):
         if config:
             name = config["name"]
             desc = config["description"]
-
+        if darkmode_pdf:
+        	name += " (dark)"
+        	desc += " - dark mode"
         buff = template_link_content
         buff = re.sub('<url>', prefix+file.split('/')[-1], buff)
         buff = re.sub('<name>', name, buff)
