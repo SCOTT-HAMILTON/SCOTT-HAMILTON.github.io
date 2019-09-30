@@ -1,9 +1,9 @@
 ---
 title: "Cours de maths"
 author: [Scott Hamilton]
-date: "08-09-2019"
-subject: "Géométrie plane"
-keywords: [Math, Demonstration]
+date: "29-09-2019"
+subject: "Ensembles"
+keywords: [Math, Ensembles]
 lang: "fr"
 table-use-row-colors: false
 ...
