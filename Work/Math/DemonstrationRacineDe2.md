@@ -44,20 +44,20 @@ $\\$
 On veut montrer que $\sqrt{2} \notin \mathbb Q$, on raisonne par l'absurde.
   
 $\Rightarrow$ Comment s'écrit $\sqrt{2}$ ?  
-alors $\sqrt{2} = \frac{a}{b}$, $a\in\mathbb N$, $b\in \mathbb N^*$
+$\sqrt{2} = \frac{a}{b}$, $a\in\mathbb N$, $b\in \mathbb N^*$
 \begin{addmargin}[5em]{2em}% 1em left, 2em right
 et 
 $
 \begin{cases}
 PGCD(a,b) = 1\\
-a \text{et} b \text{ sont premiers entre eux}\\
+a \text{ et } b \text{ sont premiers entre eux}\\
 \frac{a}{b}\text{ est irréductible}
 \end{cases}
 $
 \end{addmargin}  
 
 $\Rightarrow$ Montrer que $a^2$ est pair  
-$\sqrt{2}=\frac{a}{b}$ alors $a=\sqrt{2}\cdot 6$
+$\sqrt{2}=\frac{a}{b}$ alors $a=\sqrt{2}\cdot b$
 \begin{addmargin}[5em]{2em}% 1em left, 2em right
 et 
 $
