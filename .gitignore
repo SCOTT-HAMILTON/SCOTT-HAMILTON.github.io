@@ -1,2 +1,2 @@
-*.md
+Work/**/*.md
 !README.md
