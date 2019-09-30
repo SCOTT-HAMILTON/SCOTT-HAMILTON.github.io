@@ -1,2 +1,2 @@
-Work/**/*.md
-!README.md
+/public/Work/**/*.md
+/public/README.md
