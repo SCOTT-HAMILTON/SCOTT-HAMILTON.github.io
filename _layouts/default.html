@@ -1,31 +1,17 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
+<body class="home-template">
+    <div class="site-wrapper">
+        {% include header.html %}
         {{ content }}
-      </div>
+        {% include footer.html %}
     </div>
+</body>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script src='{{ site.baseurl }}/public/js/script.js'></script>
-  </body>
+{% include global.html %}
 </html>

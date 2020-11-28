@@ -1,39 +1,33 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}" />
+    {% elsif page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | split: ' ' | join: ', ' | escape }}" />
+	{% elsif site.keywords %}
+    <meta name="keywords" content="{{ site.keywords | split: ' ' | join: ', ' | escape }}" />
     {% endif %}
-  </title>
 
-  {% if page.url and site.baseurl %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
+    <meta name="HandheldFriendly" content="True">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+	
+    {% include ogp.html %}	
+	{% include twitter-meta.html %}	
+	{% include citation_meta.html %}	
 
-  <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="{{ "/css/screen.css" | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url  }}">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
-  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
-
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
-
-  {% if site.google_analytics_id %}
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{ site.google_analytics_id }}', 'auto');
-    ga('send', 'pageview');
-  </script>
-  {% endif %}
+    <!-- https://github.com/joshbuchea/HEAD -->
+    <link rel="icon" href="{{ "/assets/favicon-16.png" | absolute_url }}" sizes="16x16" type="image/png">
+    <link rel="icon" href="{{ "/assets/favicon-32.png" | absolute_url }}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ "/assets/favicon-48.png" | absolute_url }}" sizes="48x48" type="image/png">
+    <link rel="icon" href="{{ "/assets/favicon-62.png" | absolute_url }}" sizes="62x62" type="image/png">
 </head>

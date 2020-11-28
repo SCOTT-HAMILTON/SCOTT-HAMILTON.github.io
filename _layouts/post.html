@@ -1,27 +1,39 @@
 ---
 layout: default
 ---
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <section class="post-meta">
+				 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+					{% assign date_format = site.minima.date_format | default: "%-d %B %Y" %}
+					{% assign date_english = page.date | date: date_format %}
+					{% include date-french.html %}
+					{{ date_french }}
+				  </time>
+                <!-- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_french }}</time> -->
+            </section>
+        </header>
 
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+        <section class="post-content short-diver" itemprop="articleBody">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+            {% include authorinfo.html param=page.author %}
+        </footer>
+
+        {% if page.comments %}
+    		<div class="comments">
+    			<a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
+    			<div id="disqus_thread"></div>
+    		</div>
+    		{% endif %}
+
+    </article>
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

@@ -1,1 +1,0 @@
-$env:Path += ";strawberry-perl-5.30.0.1-32bit-portable\perl\bin"
